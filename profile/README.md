@@ -1,91 +1,41 @@
-# Kaaffilm — Governance & Infrastructure
+# kaaffilm
 
-Kaaffilm is an organization that operates **institutional-grade enforcement, governance, and verification systems** in support of long-lived cultural and technical programs.
+## MK10-PRO v1.0.3
 
-This organization is **not** a personal sandbox and **not** a marketing surface.
-Repositories hosted here exist to **enforce invariants**, **guarantee determinism**, and **preserve auditability** over time.
+Deterministic pre-delivery truth infrastructure for audiovisual mastering.
 
----
+MK10-PRO produces cryptographically verifiable Master Truth Bundles and exposes a bounded public package surface.
 
-## Purpose
+| Surface | Public location | Role |
+| --- | --- | --- |
+| Source truth | https://github.com/kaaffilm/MK10-PRO | maintained repository |
+| Release | https://github.com/kaaffilm/MK10-PRO/releases/tag/v1.0.3 | signed v1.0.3 release |
+| PyPI | https://pypi.org/project/mk10-pro/ | canonical runtime witness |
+| NPM | https://www.npmjs.com/package/@kaaffilm/mk10-pro | public registry discovery surface |
+| GitHub Packages | https://github.com/kaaffilm/MK10-PRO/pkgs/npm/mk10-pro | package-surface mirror |
 
-The Kaaffilm GitHub organization exists to:
+Canonical runtime proof:
 
-* Host **enforcement-critical infrastructure**
-* Maintain **append-only governance artifacts**
-* Provide **machine-verifiable guarantees** about process, integrity, and change
-* Separate **institutional control** from individual authorship
+```bash
+pip install mk10-pro==1.0.3
+mk10 proof
+mk10 boundary
+mk10 witness
+````
 
-All repositories are treated as **systems**, not content.
+Version lock:
 
----
+```text
+MK10-PRO public package surfaces are locked at 1.0.3.
+Do not raise the public package version to repair an immutable registry artifact.
+```
 
-## Core Principles
+Boundary:
 
-* **Determinism over convenience**
-  Builds, checks, and decisions must produce identical results under identical inputs.
+```text
+MK10-PRO verifies deterministic pre-delivery truth infrastructure.
 
-* **Invariants over policy prose**
-  Rules are enforced by code and CI, not by guidelines or trust.
+It does not verify playback, device compatibility, venue certification,
+operator trustworthiness, post-delivery behavior, or business outcome.
+```
 
-* **Append-only governance**
-  History is never rewritten. Changes are additive and auditable.
-
-* **Silence over promotion**
-  Systems do not require announcements to be legitimate.
-
----
-
-## Repositories
-
-### MK10-PRO
-
-Institutional enforcement framework providing:
-
-* Deterministic CI execution
-* Immutable failure-code contracts
-* Cryptographic integrity checks
-* Environment normalization (LC_ALL=C, TZ=UTC)
-
-MK10-PRO is a **control surface**, not a product.
-
----
-
-## What This Organization Is Not
-
-* Not a portfolio
-* Not a startup
-* Not a community playground
-* Not a social-media extension
-
-If a repository lives here, it exists because **it must not drift**.
-
----
-
-## Visibility Model
-
-* Public repositories are visible by necessity, not promotion
-* No roadmap claims without enforcement
-* No aspirational language
-
-Truth is expressed through **passing checks**, not statements.
-
----
-
-## Governance Status
-
-All enforcement-critical repositories:
-
-* Pin dependencies by cryptographic hash
-* Enforce deterministic execution
-* Reject non-compliant changes automatically
-
-Any deviation requires a new, explicit governance phase.
-
----
-
-## Contact
-
-Kaaffilm operates through verifiable systems, not inboxes.
-
-If you are reading this, the system is working.
